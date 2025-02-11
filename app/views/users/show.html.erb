@@ -1,0 +1,10 @@
+<h1>Your Borrowed Books</h1>
+<ul>
+  <% current_user.borrowings.where(returned_at: nil).each do |borrowing| %>
+    <li>
+      <%= borrowing.book.title %> - Due on <%= borrowing.due_date.to_date %>
+      <%= button_to 'Return', return_borrowing_path(borrowing), method: :post %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to 'Back to Books', books_path %>

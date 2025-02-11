@@ -98,14 +98,11 @@ Before running this application, ensure you have the following installed:
 
 This application uses RSpec for testing. To run tests:
 
-1. Install RSpec if not already installed:
-   ```bash
-   gem install rspec
-   ```
 
-2. Run the test suite:
+1. Run the test suite:
    ```bash
-   rspec
+   bundle exec rspec
+
    ```
 
 Ensure all tests pass before deploying or making changes.

@@ -18,6 +18,16 @@ gem "stimulus-rails"
 gem "jbuilder"
 # Gemfile
 gem "bcrypt"
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner-active_record'
+end
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 

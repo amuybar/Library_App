@@ -12,6 +12,9 @@ class UsersController < ApplicationController
       render :new
     end
   end
+  def show
+    @borrowings = current_user.borrowings.where(returned_at: nil)
+  end
 
   private
 

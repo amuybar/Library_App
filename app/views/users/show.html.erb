@@ -1,6 +1,7 @@
-<h1>Your Borrowed Books</h1>
+<h1>Your Profile</h1>
+<h2>Borrowed Books</h2>
 <ul>
-  <% current_user.borrowings.where(returned_at: nil).each do |borrowing| %>
+  <% @borrowings.each do |borrowing| %>
     <li>
       <%= borrowing.book.title %> - Due on <%= borrowing.due_date.to_date %>
       <%= button_to 'Return', return_borrowing_path(borrowing), method: :post %>

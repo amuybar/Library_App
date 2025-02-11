@@ -9,8 +9,7 @@
 4. [Setup Instructions](#setup-instructions)
 5. [Usage](#usage)
 6. [Testing](#testing)
-7. [Contributing](#contributing)
-8. [License](#license)
+
 
 ---
 
@@ -47,8 +46,8 @@ Before running this application, ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/BookBorrowingSystem.git
-   cd BookBorrowingSystem
+   git clone https://github.com/amuybar/Library_App.git
+   cd Library_App
    ```
 
 2. **Install Dependencies**:
@@ -64,8 +63,8 @@ Before running this application, ensure you have the following installed:
      rails db:migrate
      ```
 
-4. **Seed the Database (Optional)**:
-   If there is a `db/seeds.rb` file, you can populate the database with sample data:
+4. **Seed the Database **:
+   You can populate the database with sample data:
    ```bash
    rails db:seed
    ```

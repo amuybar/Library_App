@@ -1,10 +1,9 @@
-# app/controllers/borrowings_controller.rb
 class BorrowingsController < ApplicationController
   before_action :authenticate_user!
 
   def create
     @book = Book.find(params[:book_id])
-    @borrowing = current_user.borrowings.new(book: @book)
+    @borrowing = @current_user.borrowings.new(book: @book)
 
     if @borrowing.save
       redirect_to profile_path, notice: 'Book borrowed successfully!'

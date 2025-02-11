@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     end
   end
   def show
-    @borrowings = current_user.borrowings.where(returned_at: nil)
+    @borrowings = @current_user.borrowings.where(returned_at: nil)
   end
 
   private
